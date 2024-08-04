@@ -1,0 +1,9 @@
+
+[configuration]
+entry_symbol="example_library_init"
+compatibility_minimum="4.2"
+reloadable=true
+
+[libraries]
+linux.x86_64 = "res://build/libgdextension_example.linux.x86_64.so"
+windows.x86_64 = "res://build/libgdextension_example.windows.x86_64.so"
