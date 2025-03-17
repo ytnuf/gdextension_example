@@ -3,9 +3,10 @@ cmake_minimum_required(VERSION 3.28)
 
 project("gdextension_example")
 
-add_library("gdextension_example" SHARED
-    "src/gdexample.cpp"
-    "src/register_types.cpp"
+add_library("gdextension_example" MODULE)
+target_sources("gdextension_example" PRIVATE
+    "src/gdexample.cpp" "src/gdexample.hpp"
+    "src/register_types.cpp" "src/register_types.hpp"
 )
 
 
